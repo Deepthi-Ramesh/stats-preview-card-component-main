@@ -1,0 +1,145 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size:14px;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+}
+
+.flexcontainer{
+    width: 80%;
+    height:93vh;
+    background-color:hsl(233, 47%, 7%) ;
+    display:flex;
+    justify-content: center; 
+    align-items: center;
+    flex-direction:row;
+   
+}
+.flexitem{
+    width:40%;
+    height:55vh;
+   
+}
+
+#first{
+  background-color: hsl(244, 38%, 16%);
+  border-radius:0.71rem 0rem 0rem 0.71rem;
+  padding:3.5rem;
+}
+
+#second{ 
+      border-radius:0rem 0.71rem 0.71rem 0rem;
+     background-color: hsl(277, 64%, 61%);
+}
+
+#second>img{
+    width:100%;
+    height: 55vh;
+    mix-blend-mode: multiply;
+    opacity:0.7;
+} 
+h1{
+    font-family:'Inter',sans-serif ;
+    font-size: 1.5rem;
+    color: hsl(0, 0%, 100%);
+    font-weight:780;
+
+}
+
+p{
+    color:hsla(0, 0%, 100%, 0.75);
+    font-size:0.7rem;
+    font-family:'Inter',sans-serif;
+    line-height: 1.3rem;
+    word-spacing:0.175rem;
+    margin:1rem 0 0 0;
+}
+
+.head{
+    font-family:'Inter',sans-serif ;
+    font-size:1.6rem;
+    color:hsl(277, 64%, 61%);
+    font-weight: 780;
+}
+.flexs{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2rem 0 0 0 ; 
+    line-height: 2.1rem;
+}
+h3{
+   color: hsl(0, 0%, 100%);
+   font-family:'Inter',sans-serif;
+   font-weight:700;
+}
+
+ h6{
+    color:hsla(0, 0%, 100%, 0.6);
+    font-size:0.5rem;
+    font-family:'Inter',sans-serif;
+    line-height: 0.3rem;
+    letter-spacing: 0.1rem;
+    
+}
+
+ @media (min-width:0px) and (max-width:600px)
+{  
+    .container{
+        width:100%;
+    }
+
+    .flexcontainer{
+        width:90%;
+        flex-direction: column;
+    }
+
+    #first{
+        order:2;
+        width:75%;
+        height:65%;
+        padding:2rem;
+        text-align: center;
+     }
+    #second{
+        order: 1;
+        width:75%;
+        height:30%;
+        border-radius: 0.7rem 0.7rem 0 0;
+    }
+
+    #second>img{
+        width:100%;
+        height: 100%;
+    }
+
+    p{
+        
+        text-align: center;
+    }
+    .flexs{
+        display:flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin:0rem;
+        
+    }
+    .items{
+        margin:1rem;
+    }
+    h6{
+    font-size:0.6rem;
+    letter-spacing: 0.1rem;
+    }
+} 
